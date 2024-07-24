@@ -12,3 +12,4 @@ class Tour(models.Model):
     destination_country = models.CharField(max_length=64)
     number_of_nights = models.IntegerField()
     price = models.IntegerField()
+
