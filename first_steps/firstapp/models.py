@@ -13,3 +13,8 @@ class Tour(models.Model):
     number_of_nights = models.IntegerField()
     price = models.IntegerField()
 
+    # String representation of the tours
+    def __str__(self):
+        return (f"ID:{self.id}: From {self.origin_country}"
+                f" To {self.destination_country} for {self.number_of_nights} nights "
+                f"at a price of {self.price}$")
