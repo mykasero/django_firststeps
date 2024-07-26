@@ -12,8 +12,10 @@
 </head>
 <body>
     <div class="centered_content">
-        <img src="{% static 'images/silvia.png' %}" alt = "image1">
-        <form action = "{% url 'contact' %}" method = "get"></form>
+        <img src="{% static 'images/silvia.png' %}" alt = "image1" width = "25%" height="25%">
+        <form action = "{% url 'contact_view' %}" method = "get">
+            <button type="submit" class ="btn">Click to enter form</button>
+        </form>
     </div>
 
     <script src="{% static 'js/script.js' %}"></script>

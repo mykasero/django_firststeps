@@ -1,4 +1,4 @@
-from django.shortcuts import render , redirect # redirect lesson 7
+from django.shortcuts import render, redirect # redirect lesson 7
 # from django.http import HttpResponse lesson <4
 # from .models import Tour lesson 4-7
 from .forms import ContactForm #lesson 7
