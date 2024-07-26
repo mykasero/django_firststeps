@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect # redirect lesson 7
+from django.shortcuts import render, redirect
+#                   redirect lesson 7 ^
 # from django.http import HttpResponse lesson <4
 # from .models import Tour lesson 4-7
 from .forms import ContactForm #lesson 7
@@ -27,11 +28,11 @@ def contact_view(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.send_email()
-            return redirect('contact-success')
+            return redirect("contact-success")
     else:
         form = ContactForm()
 
-    context = {'form' : form}
+    context = {'form':form}
     return render(request, 'tours/contact.html', context)
 
 #success page
