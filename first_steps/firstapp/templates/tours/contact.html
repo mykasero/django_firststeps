@@ -2,9 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
+
     <title>Contact</title>
     <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
 
@@ -16,15 +14,9 @@
         {% csrf_token %}
         {{form.as_p}}
         <button type="submit">Submit</button>
-    </form>
-    <!--<div class="centered_content">
-        <img src="{% static 'images/silvia.png' %}" alt = "image1" width = "25%" height="25%">
-        <form action = "{% url 'contact_view' %}" method = "get">
-            <button type="submit" class ="btn">Click to enter form</button>
-        </form>
-    </div>
 
-    <script src="{% static 'js/script.js' %}"></script>-->
+    </form>
+
 
 </body>
 </html>
