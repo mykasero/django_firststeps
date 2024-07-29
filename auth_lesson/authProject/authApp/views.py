@@ -48,5 +48,16 @@ def logout_view(request):
 
 @login_required
 def home_view(request):
-    pass
+    return render(request, 'home/home.html')
+
+#Protected view
+
+class ProtectedView(LoginRequiredMixin, View):
+    login_url = '/login/'
+    # r_f_n usually = 'next'
+    redirect_field_name = 'redirect_to'
+
+    def get(self, request):
+        return render(request, 'registration/protected.html')
+
 
